@@ -32,6 +32,11 @@ body {
     gap: 3px;
 }
 
+.userProfile-container, 
+.searchBar-container {
+    align-self: start;
+}
+
 .searchBar > input {
     border-radius: 1.8em;
     width: 80%;
@@ -94,6 +99,7 @@ body {
     border: 0px;
     padding: 5px;
     width: 70px;
+    font-weight: bold;
 }
 
 .dashboard {
@@ -102,6 +108,27 @@ body {
     flex-direction: column;
     gap: 10px;
     padding: 10px;
+}
+
+.dashboard > .dashboardTitle,
+.dashboard > button {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    background-color: transparent;
+    border: 0px;
+    font-size: 16px;
+}
+
+.dashboard > .dashboardTitle {
+    margin-bottom: 3em;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.dashboard button:nth-child(7) {
+    margin-bottom: 3em;
 }
 
 .content > div {

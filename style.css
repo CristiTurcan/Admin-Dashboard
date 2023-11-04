@@ -97,6 +97,13 @@ body {
     padding: 5px;
     width: 70px;
     font-weight: bold;
+    background-color: rgb(23, 107, 144);
+    color: white;
+    padding: 7px;
+}
+
+.actionButtons > button:hover {
+    background-color: rgb(14, 71, 96);
 }
 
 .dashboard {
@@ -105,6 +112,8 @@ body {
     flex-direction: column;
     gap: 10px;
     padding: 10px;
+    background-color: rgb(23, 107, 144);
+    color: white;
 }
 
 .dashboard > .dashboardTitle,
@@ -116,6 +125,11 @@ body {
     background-color: transparent;
     border: 0px;
     font-size: 16px;
+    color: white;
+}
+
+.dashboard > button:hover {
+    color: rgb(217, 216, 216);
 }
 
 .dashboard > .dashboardTitle {

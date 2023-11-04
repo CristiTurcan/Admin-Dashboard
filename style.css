@@ -3,10 +3,6 @@ img {
     width: auto;
 }
 
-body > div {
-    border: 1px solid red;
-}
-
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -19,6 +15,7 @@ body {
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
     background-color: white;
+    box-shadow: 0 8px 8px -4px rgb(0 0 0 / 0.2);
 }
 
 .header > div {
@@ -131,10 +128,6 @@ body {
     margin-bottom: 3em;
 }
 
-.content > div {
-    border: 1px solid blue;
-}
-
 .content {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -152,22 +145,47 @@ body {
 }
 
 .card {
-    border: 1px solid blue;
     height: 200px;
     padding: 10px;
+    background-color: white;
+    border-radius: 0.6em;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
+.info p:nth-child(1),
+.card p:nth-child(1) {
+    font-weight: 900;
+    font-size: 17px;
+}
+
+.trendingTitle,
+.announcementsTitle,
 .projectsTitle {
-    border: 1px solid blue;
     margin-bottom: 10px;
+    font-size: 19px;
+    font-weight: 600;
 }
 
 .announcements {
     padding: 10px;
 }
 
+.info-container {
+    background-color: white;
+    border-radius: 0.6em;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding: 10px;
+}
+
+.info {
+    border-bottom: 1px solid rgb(0 0 0 / 0.2);
+}
+
+.info-container .info:last-child {
+    border-color: transparent;
+}
+
 .profile {
-    border: 1px solid blue;
     margin: 10px;
     display: grid;
     grid-template-columns: 1fr 10fr;
@@ -180,6 +198,19 @@ body {
 
 .trendingTitle {
     padding: 10px;
+}
+
+.profileSection {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.6em;
+}
+
+.shortDescription {
+    color: grey;
 }
 
 .profile > img {
